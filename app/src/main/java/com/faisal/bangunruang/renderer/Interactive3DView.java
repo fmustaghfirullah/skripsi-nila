@@ -260,7 +260,7 @@ public class Interactive3DView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawColor(Color.parseColor("#F5F5F5"));
+        canvas.drawColor(Color.TRANSPARENT, android.graphics.PorterDuff.Mode.CLEAR);
 
         float centerX = getWidth() / 2f;
         float centerY = getHeight() / 2f;

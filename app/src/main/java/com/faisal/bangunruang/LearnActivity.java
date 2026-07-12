@@ -9,6 +9,13 @@ import com.faisal.bangunruang.renderer.Interactive3DView;
 import com.faisal.bangunruang.utils.ShapeData;
 import com.google.android.material.tabs.TabLayout;
 
+import androidx.camera.core.CameraSelector;
+import androidx.camera.core.Preview;
+import androidx.camera.lifecycle.ProcessCameraProvider;
+import androidx.core.content.ContextCompat;
+import com.google.common.util.concurrent.ListenableFuture;
+import java.util.concurrent.ExecutionException;
+
 public class LearnActivity extends AppCompatActivity {
 
     private ActivityLearnBinding binding;
@@ -37,6 +44,25 @@ public class LearnActivity extends AppCompatActivity {
         setup3DView();
         setupTabs();
         showProperties();
+        
+        startPseudoARCamera();
+    }
+    
+    private void startPseudoARCamera() {
+        ListenableFuture<ProcessCameraProvider> cameraProviderFuture = ProcessCameraProvider.getInstance(this);
+        cameraProviderFuture.addListener(() -> {
+            try {
+                ProcessCameraProvider cameraProvider = cameraProviderFuture.get();
+                Preview preview = new Preview.Builder().build();
+                preview.setSurfaceProvider(binding.cameraPreview.getSurfaceProvider());
+                CameraSelector cameraSelector = CameraSelector.DEFAULT_BACK_CAMERA;
+                
+                cameraProvider.unbindAll();
+                cameraProvider.bindToLifecycle(this, cameraSelector, preview);
+            } catch (ExecutionException | InterruptedException e) {
+                e.printStackTrace();
+            }
+        }, ContextCompat.getMainExecutor(this));
     }
 
     private void setup3DView() {
