@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Balok - rectangular box icon -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M6,16l18,10l18,-10L24,6L6,16z"/>
+    <path
+        android:fillColor="#388E3C"
+        android:pathData="M6,16v16l18,10V26L6,16z"/>
+    <path
+        android:fillColor="#2E7D32"
+        android:pathData="M24,26v16l18,-10V16L24,26z"/>
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="0.5"
+        android:pathData="M6,16l18,10l18,-10M24,26v16"/>
+</vector>

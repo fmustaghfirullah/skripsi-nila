@@ -1,0 +1,13 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Kerucut - cone icon -->
+    <path
+        android:fillColor="#FF9800"
+        android:pathData="M24,6L10,38A14,5 0,0 0,38 38L24,6z"/>
+    <path
+        android:fillColor="#F57C00"
+        android:pathData="M10,38A14,5 0,0 0,38 38A14,5 0,0 0,10 38z"/>
+</vector>

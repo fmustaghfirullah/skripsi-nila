@@ -1,0 +1,17 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Kubus - simple cube icon -->
+    <path
+        android:fillColor="#1565C0"
+        android:pathData="M24,4L8,14v20l16,10l16,-10V14L24,4zM24,7l12,8v16l-12,7.5L12,31V15L24,7z"/>
+    <path
+        android:fillColor="#1565C0"
+        android:pathData="M12,15l12,7.5L36,15M24,22.5V38"/>
+    <path
+        android:strokeColor="#1565C0"
+        android:strokeWidth="1.5"
+        android:pathData="M12,15l12,7.5L36,15M24,22.5V38"/>
+</vector>

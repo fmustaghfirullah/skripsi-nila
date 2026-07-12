@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bangun Ruang</string>
+    <string name="nav_home">Beranda</string>
+    <string name="nav_scan">Scan</string>
+    <string name="nav_learn">Belajar</string>
+    <string name="nav_chat">Chat</string>
+
+    <string name="title_home">Pembelajaran Bangun Ruang</string>
+    <string name="title_scan">Scan Bangun Ruang</string>
+    <string name="title_result">Hasil Identifikasi</string>
+    <string name="title_learn">Pelajari Bangun Ruang</string>
+    <string name="title_chat">Tanya Jawab</string>
+
+    <string name="btn_scan">Scan Bangun Ruang</string>
+    <string name="btn_learn">Belajar Langsung</string>
+    <string name="btn_chat">Tanya Jawab</string>
+    <string name="btn_camera">Ambil Foto</string>
+    <string name="btn_gallery">Pilih dari Galeri</string>
+    <string name="btn_pelajari">Pelajari</string>
+    <string name="btn_tanya">Tanya Jawab</string>
+
+    <string name="hint_chat">Ketik pertanyaan tentang bangun ruang...</string>
+    <string name="chat_welcome">Halo! 👋 Aku robot pintar yang bisa bantu kamu belajar bangun ruang! Kamu bisa tanya tentang kubus, balok, kerucut, tabung, atau bola. Yuk tanya apa saja! 🌟</string>
+
+    <string name="result_confidence">Tingkat Keyakinan: %1$.1f%%</string>
+    <string name="result_detected">Terdeteksi: %1$s</string>
+
+    <string name="shape_kubus">Kubus</string>
+    <string name="shape_balok">Balok</string>
+    <string name="shape_kerucut">Kerucut</string>
+    <string name="shape_tabung">Tabung</string>
+    <string name="shape_bola">Bola</string>
+
+    <string name="desc_scan">Arahkan kamera ke bangun ruang atau pilih gambar dari galeri untuk mengidentifikasi bentuknya</string>
+    <string name="desc_home">Pelajari bangun ruang dengan teknologi pengenalan gambar dan model 3D interaktif</string>
+</resources>

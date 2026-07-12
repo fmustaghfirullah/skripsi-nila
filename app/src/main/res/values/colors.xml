@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warna utama - cerah dan playful untuk anak SD -->
+    <color name="primary">#FF6B35</color>
+    <color name="primary_variant">#E85D2C</color>
+    <color name="secondary">#00B4D8</color>
+    <color name="secondary_variant">#0096C7</color>
+    <color name="background">#FFF8F0</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="error">#FF4444</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="on_background">#2D3436</color>
+    <color name="on_surface">#2D3436</color>
+    <color name="on_error">#FFFFFF</color>
+
+    <!-- Warna kartu bangun ruang - cerah dan menarik -->
+    <color name="card_kubus">#FFE0B2</color>
+    <color name="card_balok">#C8E6C9</color>
+    <color name="card_kerucut">#F8BBD0</color>
+    <color name="card_tabung">#D1C4E9</color>
+    <color name="card_bola">#BBDEFB</color>
+
+    <!-- Warna aksen - gradient dan fun -->
+    <color name="fun_yellow">#FFD93D</color>
+    <color name="fun_green">#6BCB77</color>
+    <color name="fun_blue">#4D96FF</color>
+    <color name="fun_pink">#FF6B9D</color>
+    <color name="fun_purple">#C67AFF</color>
+    <color name="fun_orange">#FF9A3C</color>
+    <color name="fun_red">#FF6B6B</color>
+    <color name="fun_teal">#38D9A9</color>
+
+    <!-- Chat -->
+    <color name="chat_bot_bg">#E8F8FF</color>
+    <color name="chat_user_bg">#FFF0E0</color>
+
+    <!-- Confidence indicator -->
+    <color name="confidence_high">#6BCB77</color>
+    <color name="confidence_medium">#FFD93D</color>
+    <color name="confidence_low">#FF6B6B</color>
+
+    <!-- Toolbar gradient colors -->
+    <color name="toolbar_start">#FF6B35</color>
+    <color name="toolbar_end">#FF9A3C</color>
+</resources>

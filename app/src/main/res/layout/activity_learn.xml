@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header_gradient"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:paddingTop="32dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_back"
+            android:padding="6dp"
+            android:contentDescription="Kembali" />
+
+        <TextView
+            android:id="@+id/tv_shape_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📐 Pelajari"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/on_primary"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- 3D Interactive View -->
+    <com.faisal.bangunruang.renderer.Interactive3DView
+        android:id="@+id/view_3d"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_container"
+        app:layout_constraintBottom_toTopOf="@id/tv_tap_info" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="#E0FFFFFF"
+        app:layout_constraintBottom_toTopOf="@id/tv_tap_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/tv_3d_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👆 Geser untuk putar • Cubit untuk zoom • Ketuk titik untuk info"
+            android:textSize="11sp"
+            android:textColor="@color/on_surface"
+            android:padding="8dp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Info saat tap -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/tv_tap_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/fun_yellow"
+        app:layout_constraintBottom_toTopOf="@id/layout_info">
+
+        <TextView
+            android:id="@+id/tv_tap_info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/on_surface"
+            android:text="👉 Ketuk titik sudut atau rusuk untuk melihat keterangan!"
+            android:minHeight="40dp"
+            android:gravity="center_vertical" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Info Panel bawah -->
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/surface"
+        android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextColor="@color/on_surface"
+            app:tabSelectedTextColor="@color/primary"
+            app:tabIndicatorColor="@color/primary">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📝 Sifat" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🧮 Rumus" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🏠 Contoh" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/tv_info_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/on_surface" />
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
